@@ -1,7 +1,7 @@
 #include "vrb/BlockTimer.h"
 
 #include <ctime>
-#include <vrb/Logger.h>
+#include "vrb/Logger.h"
 
 namespace {
 const double kNanosecondsToSeconds = 1.0e9;

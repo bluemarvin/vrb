@@ -13,6 +13,7 @@
 #include "vrb/GLError.h"
 #include "vrb/Matrix.h"
 #include "vrb/Program.h"
+#include "vrb/ProgramFactory.h"
 #include "vrb/ShaderUtil.h"
 #include "vrb/Texture.h"
 #include "vrb/Vector.h"
@@ -20,7 +21,6 @@
 #include "vrb/gl.h"
 #include <string>
 #include <vector>
-#include <vrb/ProgramFactory.h>
 
 namespace vrb {
 

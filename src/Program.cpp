@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 
-#include <vrb/ShaderUtil.h>
-#include <vrb/GLError.h>
+#include "vrb/ShaderUtil.h"
+#include "vrb/GLError.h"
 #include "vrb/Program.h"
 
 #include "vrb/ConcreteClass.h"

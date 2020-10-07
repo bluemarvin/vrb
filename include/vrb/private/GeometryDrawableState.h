@@ -7,8 +7,8 @@
 #define VRB_GEOMETRY_DRAWABLE_STATE_DOT_H
 
 #include "vrb/GeometryDrawable.h"
-#include <vrb/gl.h>
-#include <vrb/Logger.h>
+#include "vrb/gl.h"
+#include "vrb/Logger.h"
 #include "vrb/private/DrawableState.h"
 #include "vrb/private/NodeState.h"
 #include "vrb/RenderBuffer.h"

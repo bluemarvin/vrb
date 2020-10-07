@@ -10,15 +10,15 @@
 #include "vrb/ConcreteClass.h"
 #include "vrb/CreationContext.h"
 #include "vrb/LoaderThread.h"
-#include <vrb/Mutex.h>
+#include "vrb/Mutex.h"
 #include "vrb/ResourceGL.h"
 #include "vrb/private/ResourceGLState.h"
 
 #include <string>
 #include <unordered_map>
-#include <vrb/Program.h>
-#include <vrb/GLError.h>
-#include <vrb/ShaderUtil.h>
+#include "vrb/Program.h"
+#include "vrb/GLError.h"
+#include "vrb/ShaderUtil.h"
 
 namespace vrb {
 
