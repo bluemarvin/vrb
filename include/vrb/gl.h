@@ -11,6 +11,8 @@
 #  include <GLES3/gl3ext.h>
 #  include <GLES2/gl2ext.h> // Need for GL_TEXTURE_EXTERNAL_OES
 #elif defined(__APPLE__)
+/* Defined before OpenGL and GLUT includes to avoid deprecation messages */
+#  define GL_SILENCE_DEPRECATION
 #  include <OpenGL/gl3.h>
 #  include <OpenGL/gl3ext.h>
 #else

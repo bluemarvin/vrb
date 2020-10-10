@@ -36,22 +36,22 @@ VertexArray::Create(CreationContextPtr& aContext) {
 
 int
 VertexArray::GetVertexCount() const {
-  return m.vertices.size();
+  return (int)m.vertices.size();
 }
 
 int
 VertexArray::GetNormalCount() const {
-  return m.normals.size();
+  return (int)m.normals.size();
 }
 
 int
 VertexArray::GetUVCount() const {
-  return m.uvs.size();
+  return (int)m.uvs.size();
 }
 
 int
 VertexArray::GetColorCount() const {
-  return m.colors.size();
+  return (int)m.colors.size();
 }
 
 void
@@ -151,13 +151,13 @@ VertexArray::SetColor(const int aIndex, const Color& aColor) {
 int
 VertexArray::AppendVertex(const Vector& aPoint) {
   m.vertices.push_back(aPoint);
-  return m.vertices.size() - 1;
+  return (int)m.vertices.size() - 1;
 }
 
 int
 VertexArray::AppendNormal(const Vector& aNormal) {
   m.normals.emplace_back(State::NormalState(aNormal));
-  return m.normals.size() - 1;
+  return (int)m.normals.size() - 1;
 }
 
 void
@@ -175,13 +175,13 @@ VertexArray::AddNormal(const int aIndex, const Vector& aNormal) {
 int
 VertexArray::AppendUV(const Vector& aUV) {
   m.uvs.push_back(aUV);
-  return m.uvs.size() - 1;
+  return (int)m.uvs.size() - 1;
 }
 
 int
 VertexArray::AppendColor(const Color& aColor) {
   m.colors.push_back(aColor);
-  return m.colors.size() - 1;
+  return (int)m.colors.size() - 1;
 }
 
 VertexArray::VertexArray(State& aState, CreationContextPtr& aContext) : m(aState) {}

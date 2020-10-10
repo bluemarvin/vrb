@@ -33,7 +33,7 @@ GeometryDrawable::Create(CreationContextPtr& aContext) {
 // Node interface
 void
 GeometryDrawable::Cull(CullVisitor& aVisitor, DrawableList& aDrawables) {
-  aDrawables.AddDrawable(std::move(CreateDrawablePtr()), aVisitor.GetTransform());
+  aDrawables.AddDrawable(CreateDrawablePtr(), aVisitor.GetTransform());
 }
 
 // Drawable interface

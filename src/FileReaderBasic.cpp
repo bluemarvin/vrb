@@ -89,7 +89,7 @@ FileReaderBasic::ReadImageFile(const std::string& aFileName, FileHandlerPtr aHan
   gliml::context loader;
   loader.enable_etc2(true);
 
-  if (!loader.load_ktx(buffer.data(), buffer.size())) {
+  if (!loader.load_ktx(buffer.data(), (int)buffer.size())) {
     std::string message("Failed to parse file: ");
     VRB_ERROR("Error code: %d", loader.error());
     aHandler->LoadFailed(imageTargetHandle, message + aFileName);

@@ -222,7 +222,7 @@ Geometry::AddFace(
 
 int32_t
 Geometry::GetFaceCount() const {
-  return m.faces.size();
+  return (int32_t)m.faces.size();
 }
 
 const Geometry::Face&

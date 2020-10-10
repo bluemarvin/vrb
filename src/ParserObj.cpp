@@ -41,12 +41,14 @@ LocalStof(const std::string& aValue) {
   return result;
 }
 
+#if 0
 static std::string
 Trim(const std::string& aStr) {
   size_t start = aStr.find_first_not_of(" ");
   size_t end = aStr.find_last_not_of(" ") + 1;
   return aStr.substr(start, end - start);
 }
+#endif // 0
 
 static std::string
 TokenizeWhiteSpace(const std::string& aBuffer, std::vector<std::string>& aTokens) {
@@ -218,7 +220,7 @@ VectorParser::GetValue(const std::vector<std::string>& aTokens, const int place)
     return aTokens.size() > place ? LocalStof(aTokens[place]) : mDefaultValue;
   } else {
     // Since place < 0 then endPlace < aTokens.size()
-    const int endPlace = aTokens.size() + place;
+    const int endPlace = (int)aTokens.size() + place;
     return endPlace >= 0 ? LocalStof(aTokens[endPlace]) : mDefaultValue;
   }
 }

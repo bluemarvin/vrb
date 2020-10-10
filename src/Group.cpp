@@ -110,7 +110,7 @@ Group::Cull(CullVisitor& aVisitor, DrawableList& aDrawables) {
   if (m.preRenderLambda) {
     aDrawables.AddDrawable(m.preRenderLambda, Matrix());
   }
-  aDrawables.PopLights(m.lights.size());
+  aDrawables.PopLights((int)m.lights.size());
 }
 
 void
@@ -164,7 +164,7 @@ Group::GetNode(uint32_t aIndex) const {
 
 int32_t
 Group::GetNodeCount() const {
-  return m.children.size();
+  return (int)m.children.size();
 }
 
 void
